@@ -1,45 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <style>
-        /* Add your custom CSS styles here */
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep Vijayarao — AI Engineer</title>
+  <meta name="description" content="Full-stack AI engineer specializing in AI systems architecture, multi-agent orchestration, and full-stack development. MS CS at Northeastern University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Add some information about yourself here.</p>
-        </section>
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">Sandeep <span>V.</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="nav__cta" href="contact.html">Get in touch</a>
+      <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__drawer" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="awards.html">Awards</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav__cta" href="contact.html">Get in touch</a>
+    </nav>
+  </header>
 
-        <section>
-            <h2>My Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project 1</h3>
-                    <p>Add a description of your project here.</p>
-                </li>
-                <li>
-                    <h3>Project 2</h3>
-                    <p>Add a description of your project here.</p>
-                </li>
-                <!-- Add more projects as needed -->
-            </ul>
-        </section>
+  <!-- HERO -->
+  <main class="page">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero__name">
+        Sandeep<br />
+        <span class="hero__name-grad">Vijayarao</span>
+      </h1>
+      <p class="hero__subtitle">
+        Full-stack AI engineer specializing in AI systems architecture,
+        multi-agent orchestration, and full-stack development.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="projects.html">View Projects</a>
+        <a class="btn btn--secondary" href="about.html">About Me</a>
+        <a class="btn btn--outline" href="contact.html">Get in Touch</a>
+      </div>
+      <div class="hero__stats" role="list">
+        <div class="hero__stat" role="listitem">
+          <div class="hero__stat-value">3×</div>
+          <div class="hero__stat-label">PMI SF Award</div>
+        </div>
+        <div class="hero__stat" role="listitem">
+          <div class="hero__stat-value">7+</div>
+          <div class="hero__stat-label">Projects</div>
+        </div>
+        <div class="hero__stat" role="listitem">
+          <div class="hero__stat-value">🏆</div>
+          <div class="hero__stat-label">Apple WWDC</div>
+        </div>
+        <div class="hero__stat" role="listitem">
+          <div class="hero__stat-value">MS</div>
+          <div class="hero__stat-label">Northeastern CS</div>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <h2>Contact Me</h2>
-            <p>Add your contact information here.</p>
-        </section>
-    </main>
+    <!-- QUICK NAV -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="reveal">
+          <p class="section__label">Explore</p>
+          <h2 class="section__title">What you'll find here.</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="home-nav reveal-group">
+          <a class="home-nav__card" href="about.html">
+            <div class="home-nav__icon">👤</div>
+            <div class="home-nav__title">About Me</div>
+            <p class="home-nav__desc">Background, education, and what drives me as an engineer and researcher.</p>
+            <div class="home-nav__arrow">→</div>
+          </a>
+          <a class="home-nav__card" href="skills.html">
+            <div class="home-nav__icon">⚙️</div>
+            <div class="home-nav__title">Skills</div>
+            <p class="home-nav__desc">Languages, frameworks, AI/ML tools, and cloud infrastructure I work with.</p>
+            <div class="home-nav__arrow">→</div>
+          </a>
+          <a class="home-nav__card" href="experience.html">
+            <div class="home-nav__icon">💼</div>
+            <div class="home-nav__title">Experience</div>
+            <p class="home-nav__desc">Teaching, AI development, internships, and everything in between.</p>
+            <div class="home-nav__arrow">→</div>
+          </a>
+          <a class="home-nav__card" href="projects.html">
+            <div class="home-nav__icon">🚀</div>
+            <div class="home-nav__title">Projects</div>
+            <p class="home-nav__desc">Real-time vision systems, LLM routers, agentic tools, and more.</p>
+            <div class="home-nav__arrow">→</div>
+          </a>
+          <a class="home-nav__card" href="awards.html">
+            <div class="home-nav__icon">🏆</div>
+            <div class="home-nav__title">Awards</div>
+            <p class="home-nav__desc">Apple WWDC, NASA, PMI, IEEE publication, and professional certifications.</p>
+            <div class="home-nav__arrow">→</div>
+          </a>
+          <a class="home-nav__card" href="contact.html">
+            <div class="home-nav__icon">✉️</div>
+            <div class="home-nav__title">Contact</div>
+            <p class="home-nav__desc">Open to roles, research collaborations, and interesting conversations.</p>
+            <div class="home-nav__arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>© 2022 My Portfolio. All rights reserved.</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Sandeep Vijayarao</div>
+          <div class="footer__tagline">Full-stack AI Engineer &middot; San Jose, CA</div>
+        </div>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="awards.html">Awards</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__copy">&copy; 2026 Sandeep Vijayarao. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
